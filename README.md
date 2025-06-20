@@ -33,7 +33,7 @@
 
 ### 安装要求
 
-- Minecraft 服务器：Spigot/Paper 1.12+
+- Minecraft 服务器：Paper 1.21.4(其余版本尚未验证)
 - 必须插件：[Vault](https://www.spigotmc.org/resources/vault.34315/)
 - 经济插件：EssentialsX / CMI / 或其他 Vault 兼容经济系统
 
