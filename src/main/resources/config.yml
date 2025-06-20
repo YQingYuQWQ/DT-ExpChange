@@ -1,0 +1,54 @@
+# 金币兑换经验插件配置
+# 可用的兑换档位名称列表
+tiers:
+  - small
+  - medium
+  - large
+  - vip
+
+# 兑换档位详细设置
+exchange_tiers:
+  small:
+    coins: 1000      # 需要的金币数量
+    min_exp: 100     # 最小获得经验
+    max_exp: 1000    # 最大获得经验
+    permission: ""   # 需要的权限(留空则不需要)
+
+  medium:
+    coins: 5000
+    min_exp: 1000
+    max_exp: 5000
+    permission: ""
+
+  large:
+    coins: 10000
+    min_exp: 5000
+    max_exp: 15000
+    permission: ""
+
+  vip:
+    coins: 20000
+    min_exp: 10000
+    max_exp: 30000
+    permission: "cointoexp.vip"  # 需要cointoexp.vip权限才能使用此档位
+
+# 插件消息配置
+messages:
+  insufficient_funds: "&c金币不足! 需要{coins}金币，你只有{balance}金币"
+  success: "&a成功兑换! 花费{coins}金币获得{exp}经验"
+  invalid_tier: "&c无效的兑换档位!"
+  no_permission: "&c你没有权限使用这个兑换档位!"
+  balance_after: "&b剩余金币: {balance}"
+
+# 插件设置
+settings:
+  # 是否在兑换时播放音效
+  play_sound: true
+  sound: "ENTITY_PLAYER_LEVELUP"
+  sound_volume: 1.0
+  sound_pitch: 1.0
+
+  # 是否在兑换时显示粒子效果
+  show_particles: true
+  particle: "VILLAGER_HAPPY"
+  particle_count: 10

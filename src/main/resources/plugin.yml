@@ -1,0 +1,9 @@
+name: DT ExpChange
+version: '1.0-SNAPSHOT'
+main: org.dTExpChange.DTExpChange
+api-version: '1.21'
+depend: [Vault]
+commands:
+  exchangeexp:
+    description: 使用金币兑换经验值
+    usage: /exchangeexp [档位名称]
